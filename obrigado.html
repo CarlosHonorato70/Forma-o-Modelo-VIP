@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! - Terapia VIP</title>
+    <meta name="description" content="Sua inscrição foi recebida com sucesso! Verifique seu email para próximos passos.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .obrigado-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .obrigado-content {
+            max-width: 600px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .success-icon i {
+            font-size: 3rem;
+            color: white;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .obrigado-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .obrigado-subtitle {
+            font-size: 1.25rem;
+            color: #cbd5e0;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .proximos-passos {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        
+        .proximos-passos h3 {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .passo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #cbd5e0;
+        }
+        
+        .passo-numero {
+            width: 30px;
+            height: 30px;
+            background: #38b2ac;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .botoes-acao {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-acao {
+            background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-acao:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(56, 178, 172, 0.3);
+        }
+        
+        .btn-secundario {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .btn-secundario:hover {
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+        }
+        
+        .contato-urgente {
+            background: rgba(229, 62, 62, 0.2);
+            border: 1px solid #e53e3e;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .contato-urgente h4 {
+            color: #fed7d7;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contato-urgente p {
+            color: #feb2b2;
+            margin-bottom: 1rem;
+        }
+        
+        .contato-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contato-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fed7d7;
+        }
+        
+        .contato-item i {
+            color: #e53e3e;
+        }
+        
+        @media (max-width: 768px) {
+            .obrigado-content {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .obrigado-title {
+                font-size: 2rem;
+            }
+            
+            .botoes-acao {
+                flex-direction: column;
+            }
+            
+            .contato-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="obrigado-container">
+        <div class="obrigado-content">
+            <div class="success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            
+            <h1 class="obrigado-title">Obrigado!</h1>
+            <p class="obrigado-subtitle">
+                Sua inscrição foi recebida com sucesso! Em breve você receberá um email com todas as informações sobre o curso e as opções de pagamento.
+            </p>
+            
+            <div class="proximos-passos">
+                <h3>Próximos Passos:</h3>
+                
+                <div class="passo">
+                    <div class="passo-numero">1</div>
+                    <div>
+                        <strong>Verifique seu email</strong> (incluindo spam/lixo eletrônico) nos próximos 5 minutos
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-numero">2</div>
+                    <div>
+                        <strong>Clique no link</strong> do email para confirmar sua inscrição e acessar as opções de pagamento
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-numero">3</div>
+                    <div>
+                        <strong>Escolha sua forma de pagamento</strong> e garante sua vaga na turma VIP
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-numero">4</div>
+                    <div>
+                        <strong>Receba acesso imediato</strong> ao grupo VIP e materiais de bônus
+                    </div>
+                </div>
+            </div>
+            
+            <div class="botoes-acao">
+                <a href="index.html" class="btn-acao">
+                    <i class="fas fa-home"></i>
+                    Voltar ao Site
+                </a>
+                <a href="vendas.html" class="btn-acao btn-secundario">
+                    <i class="fas fa-info-circle"></i>
+                    Ver Detalhes do Curso
+                </a>
+            </div>
+            
+            <div class="contato-urgente">
+                <h4><i class="fas fa-exclamation-triangle"></i> Não recebeu o email?</h4>
+                <p>Se você não receber nosso email em até 10 minutos, entre em contato conosco imediatamente:</p>
+                
+                <div class="contato-info">
+                    <div class="contato-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>modelovippsicoterapia@gmail.com</span>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 9999-9999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Tracking da página de agradecimento
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track conversão
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+                    'value': 1.0,
+                    'currency': 'BRL'
+                });
+            }
+            
+            // Track Facebook Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
+            
+            console.log('Conversão registrada - Página de agradecimento');
+        });
+        
+        // Redirecionar para WhatsApp se não receber email
+        function abrirWhatsApp() {
+            const mensagem = encodeURIComponent('Olá! Me inscrevi no curso de Terapia VIP mas não recebi o email de confirmação. Podem me ajudar?');
+            window.open(`https://wa.me/5511999999999?text=${mensagem}`, '_blank');
+        }
+        
+        // Adicionar funcionalidade ao botão de WhatsApp (se necessário)
+        setTimeout(() => {
+            const contatoUrgente = document.querySelector('.contato-urgente');
+            if (contatoUrgente) {
+                contatoUrgente.addEventListener('click', abrirWhatsApp);
+                contatoUrgente.style.cursor = 'pointer';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+

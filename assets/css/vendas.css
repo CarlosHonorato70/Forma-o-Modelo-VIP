@@ -1,0 +1,834 @@
+/* Página de Vendas - Estilos Específicos */
+
+/* Header Vendas */
+.header-vendas {
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.urgencia-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+}
+
+.urgencia-header i {
+    color: #f6ad55;
+}
+
+/* Hero Vendas */
+.hero-vendas {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    padding: 4rem 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.badge-exclusivo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #d69e2e 0%, #f6ad55 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-gradient {
+    background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a365d;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+/* Urgência Box */
+.urgencia-box {
+    background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);
+    border: 2px solid #fc8181;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.urgencia-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.urgencia-content i {
+    color: #e53e3e;
+    font-size: 1.5rem;
+}
+
+.urgencia-text {
+    color: #742a2a;
+    font-weight: 600;
+}
+
+.vagas-restantes {
+    color: #e53e3e;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.countdown-box {
+    text-align: center;
+}
+
+.countdown-label {
+    color: #742a2a;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.time-unit {
+    background: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    min-width: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.time-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #e53e3e;
+}
+
+.time-label {
+    font-size: 0.8rem;
+    color: #742a2a;
+    font-weight: 500;
+}
+
+/* CTA Principal */
+.cta-principal {
+    text-align: center;
+}
+
+.btn-cta-principal {
+    background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 10px 25px rgba(56, 178, 172, 0.3);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.btn-cta-principal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(56, 178, 172, 0.4);
+}
+
+.cta-subtitle {
+    color: #718096;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Hero Video */
+.video-container {
+    background: #1a365d;
+    border-radius: 15px;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.video-placeholder {
+    text-align: center;
+}
+
+.video-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #4fd1c7;
+}
+
+.video-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.video-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.video-stat i {
+    color: #d69e2e;
+}
+
+/* Benefícios Section */
+.beneficios-section {
+    padding: 5rem 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #718096;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.beneficio-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.beneficio-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.beneficio-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.beneficio-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.beneficio-card p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+/* Depoimentos Vendas */
+.depoimentos-vendas {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.depoimento-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.stars {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.stars i {
+    color: #d69e2e;
+}
+
+.depoimento-content p {
+    color: #4a5568;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.autor-info h4 {
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.autor-info span {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* Planos Section */
+.planos-section {
+    padding: 5rem 0;
+    background: white;
+}
+
+.planos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.plano-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.plano-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.plano-destaque {
+    border-color: #38b2ac;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(56, 178, 172, 0.2);
+}
+
+.plano-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.plano-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.plano-header h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.preco-original {
+    text-decoration: line-through;
+    color: #a0aec0;
+    font-size: 1rem;
+    display: block;
+}
+
+.preco-promocional {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #38b2ac;
+    display: block;
+}
+
+.parcelas {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.plano-beneficios ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.plano-beneficios li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+}
+
+.plano-beneficios i {
+    color: #38b2ac;
+    font-weight: 600;
+}
+
+.btn-plano {
+    width: 100%;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.btn-plano:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(26, 54, 93, 0.3);
+}
+
+.btn-premium {
+    background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+}
+
+.btn-premium:hover {
+    box-shadow: 0 10px 25px rgba(56, 178, 172, 0.3);
+}
+
+/* Garantia Box */
+.garantia-box {
+    background: linear-gradient(135deg, #c6f6d5 0%, #9ae6b4 100%);
+    border: 2px solid #68d391;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.garantia-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.garantia-icon {
+    width: 80px;
+    height: 80px;
+    background: #38a169;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.garantia-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.garantia-text h3 {
+    color: #22543d;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.garantia-text p {
+    color: #276749;
+    line-height: 1.6;
+}
+
+/* Inscrição Section */
+.inscricao-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    color: white;
+}
+
+.inscricao-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.inscricao-info h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.inscricao-info p {
+    font-size: 1.1rem;
+    color: #cbd5e0;
+    margin-bottom: 2rem;
+}
+
+.urgencia-final {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.urgencia-icon {
+    width: 60px;
+    height: 60px;
+    background: #e53e3e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.urgencia-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.urgencia-content h3 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.countdown-final {
+    background: #e53e3e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.beneficios-inscricao h3 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.beneficios-inscricao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios-inscricao li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #cbd5e0;
+}
+
+.beneficios-inscricao i {
+    color: #4fd1c7;
+}
+
+/* Formulário de Inscrição */
+.inscricao-form {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    color: #1a365d;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: #718096;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1a365d;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #38b2ac;
+    box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.1);
+}
+
+.btn-inscricao {
+    width: 100%;
+    background: linear-gradient(135deg, #38b2ac 0%, #4fd1c7 100%);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-inscricao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(56, 178, 172, 0.3);
+}
+
+.form-disclaimer {
+    text-align: center;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Footer Vendas */
+.footer-vendas {
+    background: #1a202c;
+    color: white;
+    padding: 2rem 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-info h3 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+    color: #a0aec0;
+}
+
+.footer-contato p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #a0aec0;
+}
+
+.footer-contato i {
+    color: #4fd1c7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #2d3748;
+    color: #a0aec0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content,
+    .inscricao-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .countdown {
+        gap: 0.5rem;
+    }
+    
+    .time-unit {
+        min-width: 50px;
+        padding: 0.25rem;
+    }
+    
+    .time-number {
+        font-size: 1.25rem;
+    }
+    
+    .planos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .plano-destaque {
+        transform: none;
+    }
+    
+    .garantia-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .urgencia-header {
+        font-size: 0.9rem;
+    }
+}
+
